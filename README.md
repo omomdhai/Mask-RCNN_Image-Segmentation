@@ -1,7 +1,3 @@
-Sure! Here's an enhanced and detailed `README.md` file for your project:
-
----
-
 # Image Segmentation with Mask R-CNN
 
 This repository contains code and resources for performing image segmentation using the Mask R-CNN model. The implementation is based on TensorFlow and TensorFlow Hub.
