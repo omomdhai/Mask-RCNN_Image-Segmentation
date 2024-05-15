@@ -25,22 +25,16 @@ To install the necessary packages and set up the project, follow these steps:
 
 1. Clone the repository:
 
-    ```sh
     git clone https://github.com/tensorflow/models.git
     cd models/research
-    ```
 
 2. Install the required packages:
 
-    ```sh
     pip install -r requirements.txt
-    ```
 
 3. Install the object detection package:
 
-    ```sh
     pip install .
-    ```
 
 ## Directory Structure
 
@@ -57,25 +51,19 @@ To train a model, follow these steps:
 2. Update the configuration file with paths to your dataset and pre-trained model checkpoints.
 3. Run the training script:
 
-    ```sh
     python object_detection/model_main_tf2.py --model_dir=path/to/model_dir --pipeline_config_path=path/to/pipeline.config
-    ```
 
 ### Evaluation
 
 To evaluate a trained model, use the evaluation script:
 
-    ```sh
     python object_detection/model_main_tf2.py --model_dir=path/to/model_dir --pipeline_config_path=path/to/pipeline.config --checkpoint_dir=path/to/checkpoint_dir
-    ```
 
 ### Inference
 
 To perform inference with a trained model, use the inference script provided in the `object_detection` directory:
 
-    ```sh
     python object_detection/inference/infer_detections.py --input_tfrecord_paths=path/to/tfrecords --output_tfrecord_path=path/to/output_tfrecords --inference_graph=path/to/frozen_inference_graph.pb
-    ```
 
 ## Jupyter Notebooks
 
@@ -83,15 +71,11 @@ This repository also includes Jupyter notebooks for demonstrating and experiment
 
 1. Install Jupyter:
 
-    ```sh
     pip install jupyter
-    ```
 
 2. Start the Jupyter notebook server:
 
-    ```sh
     jupyter notebook
-    ```
 
 3. Open and run the notebooks in your browser.
 
